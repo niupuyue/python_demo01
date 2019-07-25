@@ -19,14 +19,14 @@ counter = 100  # 赋值整型变量
 mails = 10.01  # 赋值浮点类型
 values = 'hello world'  # 赋值字符类型
 
-print counter
-print mails
-print values
+print(counter)
+print(mails)
+print(values)
 
 # 多个变量赋值
 a, b, c = 1, 10.2, 'paulniu'
 
-print a, b, c
+print(a, b, c)
 
 # 标准数据类型
 
@@ -58,43 +58,43 @@ complex(复数)
 '''
 
 # 字符串
-print "-----------------------------------------------------------------"
+print("-----------------------------------------------------------------")
 ss = "hello world!"
-print ss  # 输出完整字符串
-print ss[0]  # 输出字符串中第一个字符
-print ss[2:5]  # 数组字符串中第三个和第六个之间的字符串
-print ss[2:]  # 输出字符串中第三个开始后面的字符串
-print ss * 2  # 输出字符串两次
-print ss + "test"  # 输出拼接字符串
-print ss[-4:]
-print ss[-4:4]
+print(ss)  # 输出完整字符串
+print(ss[0])  # 输出字符串中第一个字符
+print(ss[2:5])  # 数组字符串中第三个和第六个之间的字符串
+print(ss[2:])  # 输出字符串中第三个开始后面的字符串
+print(ss * 2)  # 输出字符串两次
+print(ss + "test")  # 输出拼接字符串
+print(ss[-4:])
+print(ss[-4:4])
 
 # 设置步长
-print "-" * 100
+print("-" * 100)
 ss1 = "abcdefghijklmnopqrstuvwxyz"
-print ss1[0:20:2]
+print(ss1[0:20:2])
 
 # 列表拼接
 
-ss2 = ["hello","world","!"]
-ss3 = [100,"python","!"]
+ss2 = ["hello", "world", "!"]
+ss3 = [100, "python", "!"]
 ss4 = "paulniu"
-print "-" * 100
-print ss2 + ss3
+print("-" * 100)
+print(ss2 + ss3)
 
 # 元组
 
 '''
 元组相当于list列表，但是只能赋值一次，不能再次修改
 '''
-print "-" * 100
-ss5 = ("hello","world","!",100);
-print ss5
+print("-" * 100)
+ss5 = ("hello", "world", "!", 100);
+print(ss5)
 
 # 字典
-print "-" * 100
-ss6 = {"key1":"value1","name":"paulniu","age":27,100:"classname",101:10001}
-print ss6
+print("-" * 100)
+ss6 = {"key1": "value1", "name": "paulniu", "age": 27, 100: "classname", 101: 10001}
+print(ss6)
 
 # Python基本数据类型的转化
 
@@ -117,5 +117,5 @@ ord(x) 将一个字符转换为它的整数值
 hex(x) 将一个整数转换为一个十六进制字符串
 oct(x) 将一个整数转换为一个八进制字符串
 '''
-print "-" * 100
-print int(4)
+print("-" * 100)
+print(int(4))
