@@ -49,10 +49,15 @@ var1 = 1
 var2 = 10
 # 同时我们可以使用del语句删除一些对象的引用
 del var1
+# print(var1)
+var3 = 10.11
+var4 = True
+print(type(var3))
+print(isinstance(var4,bool))
 '''
 Python支持4中不同的数字类型
 int
-long
+boolean
 float
 complex(复数)
 '''
@@ -119,3 +124,4 @@ oct(x) 将一个整数转换为一个八进制字符串
 '''
 print("-" * 100)
 print(int(4))
+

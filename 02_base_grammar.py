@@ -28,3 +28,11 @@ Python 可以同一行显示多条语句，方法是用分号 ; 分开
 1.单行注释：使用字符'#'
 2.多行注释：使用字符"""或者当前的样式
 '''
+
+# 查看保留字
+
+import keyword
+import sys
+print("-" * 100)
+print(keyword.kwlist)
+print(sys.path)
