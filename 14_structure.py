@@ -69,3 +69,33 @@ print([3 * x for x in vec if x >= 3])
 # 再来一个
 print("-" * 100)
 print([x * y for x in vec for y in vec2])
+
+# 嵌套列表解析
+
+'''
+这里我们想要讲一个3x4的矩阵转化成4x3的矩阵
+'''
+print("-" * 100)
+matrix = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+]
+print(matrix)
+print("-" * 100)
+print([[row[i] for row in matrix] for i in range(4)])
+print("-" * 100)
+# 另外一种解决方案
+transformat = []
+for i in range(4):
+    transformat.append([row[i] for row in matrix])
+print(transformat)
+# 另一种解决方案 其实就是将第二种方法拆分出来的
+print("-" * 100)
+trans = []
+for i in range(4):
+    trans_sub = []
+    for row in matrix:
+        trans_sub.append(row[i])
+    trans.append(trans_sub)
+print(trans)
