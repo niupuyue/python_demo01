@@ -48,7 +48,25 @@ print("hello python!")
 
 # 4.二次方程
 # 二次方程的一般格式为ax**2 + bx + c = 0，我们这里要求用户传入a,b,c的值，然后计算出x的值
-#
+# 需要导入cmath模块
+# import cmath
+# a = float(input("请输入a的值：\n"))
+# b = float(input("请输入b的值：\n"))
+# c = float(input("请输入c的值：\n"))
+# # 计算
+# d = (b ** 2) - (4 * a * c)
+# # 两种求解方式
+# sol1 = (-b - cmath.sqrt(d)) / (2 * a)
+# sol2 = (-b + cmath.sqrt(d)) / (2 * a)
+# print("结果为{0} 和 {1}".format(sol1, sol2))
 
-
-
+# 5.计算三角形的面积
+# 需要用户输入三角形的三条边长，然后计算出三角形的面积
+a = float(input("请输入第一条三角形的边\n"))
+b = float(input("请输入第二条三角形的边\n"))
+c = float(input("请输入第三条三角形的边\n"))
+# 计算半周长
+s = (a + b + c) / 2
+# 计算面积
+area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+print("三角形的面试为%0.2f" % area)
