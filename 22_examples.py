@@ -1,10 +1,10 @@
 # 部分示例展示
 
 # 1.hello world 示例
-print("-" * 200)
-print("1. hello world示例")
-print("hello world!")
-print("hello python!")
+# print("-" * 200)
+# print("1. hello world示例")
+# print("hello world!")
+# print("hello python!")
 
 # 2.数字求和
 # 要求用户输入两个数字，并求出两个数字的和
@@ -62,11 +62,11 @@ print("hello python!")
 
 # 5.计算三角形的面积
 # 需要用户输入三角形的三条边长，然后计算出三角形的面积
-a = float(input("请输入第一条三角形的边\n"))
-b = float(input("请输入第二条三角形的边\n"))
-c = float(input("请输入第三条三角形的边\n"))
-# 计算半周长
-s = (a + b + c) / 2
-# 计算面积
-area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
-print("三角形的面试为%0.2f" % area)
+# a = float(input("请输入第一条三角形的边\n"))
+# b = float(input("请输入第二条三角形的边\n"))
+# c = float(input("请输入第三条三角形的边\n"))
+# # 计算半周长
+# s = (a + b + c) / 2
+# # 计算面积
+# area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
+# print("三角形的面试为%0.2f" % area)
