@@ -70,3 +70,31 @@
 # # 计算面积
 # area = (s * (s - a) * (s - b) * (s - c)) ** 0.5
 # print("三角形的面试为%0.2f" % area)
+
+# 6.计算圆的面积
+# 需要用户输入圆的半径
+# import math
+# isbreak = 1;
+# while isbreak:
+#     r = input("请输入圆的半径\n")
+#     if r.isdigit():
+#         isbreak = 0
+#     else:
+#         print("请输入数字哟")
+# radius = float(r)
+# res = radius ** 2 * math.pi
+# print("求圆的面积为%0.3f" % res)
+
+# 随机数
+# 随机获得0-9的随机数
+# import random
+# print(random.randint(0, 9))
+
+# 随机数字小游戏
+
+import random
+i = 1
+a = random.randint(0,100)
+
+
+
