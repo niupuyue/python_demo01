@@ -193,7 +193,6 @@ self的名字并不是规定死的，我们也可以使用this，但是最好还
 __private_method:两个下划线开头，声明该方法为私有方法，只能在类的内部调用，不能在类的外部调用，在类的内部调用的时候使用过的是self.__private_method
 '''
 
-
 # !/usr/bin/python3
 
 # class JustCounter:
@@ -284,10 +283,12 @@ class Class1:
 
     def __str__(self):
         return "这个人的名字是%s，目前已经%d岁了" % (self.name, self.age)
-cc = Class1("mafei",27)
+
+
+cc = Class1("mafei", 27)
 print(cc)
 
-#在Python3.7之后的版本，对类的构造函数进行了精简
+# 在Python3.7之后的版本，对类的构造函数进行了精简
 '''
 from dataclasses import dataclass
 @dataclass
@@ -305,11 +306,32 @@ class A:
     return self.x + self.y    
 '''
 
+# 静态方法，普通方法，类方法
+'''
+1.静态方法：用@staticmethod修饰不带self参数的就是静态方法，类的静态方法可以没有参数，直接通过类名调用
+2.普通方法：默认有一个self参数，只能通过对象调用
+3.类方法：默认有一个cls参数，可以被类和对象调用，需要加上@classmethod修饰器
+'''
+class ClassName:
+    @staticmethod
+    def fun():
+        print("我是静态方法")
 
+    @classmethod
+    def a(cls):
+        print("我是类方法")
 
+    #普通方法
+    def b(self):
+        print("我是普通方法")
 
+ClassName.a()
+ClassName.fun()
 
-
+cc = ClassName()
+cc.fun()
+cc.a()
+cc.b()
 
 
 
