@@ -91,10 +91,12 @@
 # print(random.randint(0, 9))
 
 # 随机数字小游戏
+# import random
+# i = 1
+# a = random.randint(0,100)
 
-import random
-i = 1
-a = random.randint(0,100)
+
+
 
 
 
