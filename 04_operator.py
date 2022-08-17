@@ -24,6 +24,12 @@ print("a / b = " + str(a / b))  # 商
 print("a % b = " + str(a % b))  # 取余
 print("a // b = " + str(a // b))  # 向下取整
 
+# 算术运算符 跟字符串相结合
+c = "hello"
+print(c + " world!")
+# 字符串之间可以通过+号进行拼接
+del a, b, c
+
 # 比较运算符
 
 a1 = 21
@@ -36,6 +42,7 @@ print("a > b : " + str(a > b))
 print("a < b : " + str(a < b))
 print("a >= b : " + str(a >= b))
 print("a <= b : " + str(a <= b))
+del a1, b1
 
 # 赋值运算符
 
@@ -55,5 +62,4 @@ a2 %= b2
 print("a %= b : " + str(a2))
 a2 //= b2
 print("a //= b : " + str(a2))
-
-
+del a2, b2

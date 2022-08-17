@@ -33,7 +33,13 @@ del var1
 \v 纵向制表符
 \t 横向制表符
 \f 换页
+如果我们想要某一个字符串不要进行转移，则可以使用r，如下
 '''
+var1 = "abcdefg\n"
+var2 = r"abcdefg\n"
+print(var1)
+print(var2)
+del var1, var2
 
 # Python字符串格式化
 
@@ -42,6 +48,9 @@ Python 支持格式化字符串的输出 。尽管这样可能会用到非常复
 '''
 var1 = "ab%sdefghijklmn"
 print(var1 % (" hahah "))
+var2 = "ab%defghijklmn"
+print(var2 % (100))
+del var1, var2
 
 '''
 1. %c 格式化字符串以及ASCII码
@@ -70,5 +79,3 @@ print(var1 % (" hahah "))
 10. rstrip()    删除字符串字符串末尾的空格.
 
 '''
-
-

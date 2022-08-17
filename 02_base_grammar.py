@@ -33,6 +33,21 @@ Python 可以同一行显示多条语句，方法是用分号 ; 分开
 
 import keyword
 import sys
+
 print("-" * 100)
+# 打印所有的保留字段
 print(keyword.kwlist)
 print(sys.path)
+
+
+def test(name, age):
+    """
+    测试方法
+    :param name 姓名
+    :param age 年龄
+    :return: 返回创建的用户详情
+    """
+    pass
+
+
+print(test.__doc__)

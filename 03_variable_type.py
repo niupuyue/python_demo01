@@ -53,7 +53,7 @@ del var1
 var3 = 10.11
 var4 = True
 print(type(var3))
-print(isinstance(var4,bool))
+print(isinstance(var4, bool))
 '''
 Python支持4中不同的数字类型
 int
@@ -86,6 +86,10 @@ ss3 = [100, "python", "!"]
 ss4 = "paulniu"
 print("-" * 100)
 print(ss2 + ss3)
+ss5 = ss2 + ss3
+ss6 = [item for item in ss5 if item != "!"]
+print(len(ss5))
+print(ss6)
 
 # 元组
 
@@ -124,4 +128,3 @@ oct(x) 将一个整数转换为一个八进制字符串
 '''
 print("-" * 100)
 print(int(4))
-
